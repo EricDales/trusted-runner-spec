@@ -16,11 +16,46 @@ When it comes to corporate context, sf is usually getting implemented as a corpo
 <br/><br/>  
 
 ### Focus on financial institutions
+Financial institutions are a regulated context, it means it must comply with laws and rules defined by the regulators (e.g. ECB). When it comes to compliance, things don't work on a trust relationship basis. Regulated actor must prove to regulator that it complies. This brings a significant shift in the way actors within a company are interacting. When an evidence must be provided, it can't rely on a simple declaration, it must rely on a unquestionable audit track.  
+<br/>  
+
+That being said, let's apply this to the software development activity and more specifically to the build process. If someone cares about the security and the resiliency of your application, he should look to what happened within software factory. And lets be clear about this, now, the regulator cares about the way financial institutions are building software. 
 <br/><br/>  
-  
-## Main components
 
+### So, what's the story ?
+When you send your code to a software factory, what mainly happens is:
+- your code is built to produce deployable artifacts
+- your code is inspected for quality and security
+- your code is tested
+- the dependencies of your code are reviewed
+- your code (e.g. the artifacts build upon your code) is deployed
 
+More things can happen, and more things actually happen, but the steps listed above are the ones that will matter to prove you are building a secured application. Major problem is that most Continuous Integration systems (CI) are a wide freedom space for developers. And that's pretty cool for developers. But for people who must prove that good job was done, it's a nightmare. 
+<br/><br/>  
+
+### You mentionned freedom space, what are you refering to ?
+SHELL STEP WITHIN A PIPELINE
+<br/><br/>  
+
+### Why ?
+because the developer can (intentionally or not) build black box using shell and break auditability. 
+
+### So, should we prevent shell steps within CI ?
+NO NO (I'm a developer too). More seriously, CI is an innovation place, and preventing developer from putting his hands in it is as benificial as jumping on the brake 100 yards from finish line. 
+<br/><br/>  
+
+### So ?
+Let's try to imagine a system in which the CI service provider can guarantee execution of particular steps that will used as evidence for regulator, while still allowing developer to configure his pipeline. 
+<br/><br/>  
+
+## The place to be
+
+What is the best place to control what's going in a software factory ?
+- the code -> No
+- the CI controller -> No
+- the CI build agent -> YES
+
+### 
   
 ## Deployment patterns
 
