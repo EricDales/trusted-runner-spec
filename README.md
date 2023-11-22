@@ -1,6 +1,7 @@
 # trusted-runner-spec
-A specification for a GitHub Actions self-hosted runner
-
+A specification for a GitHub Actions self-hosted runner that you can trust.  
+If you don't care about blabla, you can head directly to the [specification](SPEC.md). If you want to understand / challenge the rational, go through the below paragraphs. 
+<br/><br/>  
 
 ## Context and motivations
 ### Software factory rational
@@ -50,13 +51,11 @@ Let's try to imagine a system in which the CI service provider can guarantee exe
 
 ## The place to be
 
-What is the best place to control what's going in a software factory ?
+What is the best place to control what's going on in a software factory ?
 - the code -> No
 - the CI controller -> No
 - the CI build agent -> YES
-
-### 
-  
-## Deployment patterns
-
+<br/>  
+GitHub Actions is a great CI system that provides a large autonomy to developer. The purpose of this specification is to tell how we can conciliate this great tool with sf service provider concern. Now let's move to the [spec](SPEC.md)
+<br/><br/>  
 
