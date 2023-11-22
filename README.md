@@ -39,14 +39,15 @@ SHELL STEP WITHIN A PIPELINE
 <br/><br/>  
 
 ### Why ?
-because the developer can (intentionally or not) build black box using shell and break auditability. 
+because the developer can (intentionally or not) build black box using shell step and break auditability. 
+<br/><br/>  
 
 ### So, should we prevent shell steps within CI ?
-NO NO (I'm a developer too). More seriously, CI is an innovation place, and preventing developer from putting his hands in it is as benificial as jumping on the brake 100 yards from finish line. 
+NO NO (I'm a developer too). More seriously, CI is an innovation place, and preventing developer from putting his hands in it is as benificial as jumping on the brake 100 yards from the finish line. 
 <br/><br/>  
 
 ### So ?
-Let's try to imagine a system in which the CI service provider can guarantee execution of particular steps that will used as evidence for regulator, while still allowing developer to configure his pipeline. 
+Let's try to imagine a system in which the sf service provider can guarantee execution of particular steps that will be used as evidence for regulator, while still allowing developer to configure his pipeline. 
 <br/><br/>  
 
 ## The place to be
@@ -54,8 +55,9 @@ Let's try to imagine a system in which the CI service provider can guarantee exe
 What is the best place to control what's going on in a software factory ?
 - the code -> No
 - the CI controller -> No
-- the CI build agent -> YES
-<br/>  
-GitHub Actions is a great CI system that provides a large autonomy to developer. The purpose of this specification is to tell how we can conciliate this great tool with sf service provider concern. Now let's move to the [spec](SPEC.md)
+- the CI build agent -> YES YES YES
+<br/>
+
+GitHub Actions is a great CI system that provides a large autonomy to developer. The purpose of this specification is to tell how we can conciliate this great tool with sf service provider concern. Now let's move to the [spec](SPEC.md). 
 <br/><br/>  
 
