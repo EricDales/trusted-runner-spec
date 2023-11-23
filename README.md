@@ -31,7 +31,11 @@ When you send your code to a software factory, what mainly happens is:
 - the dependencies of your code are reviewed
 - your code (e.g. the artifacts build upon your code) is deployed
 
-More things can happen, and more things actually happen, but the steps listed above are the ones that will matter to prove you are building a secured application. Major problem is that most Continuous Integration systems (CI) are a wide freedom space for developers. And that's pretty cool for developers. But for people who must prove that good job was done, it's a nightmare. 
+More things can happen, and more things actually happen, but the steps listed above are the ones that will matter to prove you are building a secured application. 
+Major problem is that most Continuous Integration systems (CI) are a wide freedom space for developers. 
+And that's pretty cool for developers. 
+But for people who must prove that good job was done, it's a nightmare. 
+And in regulated industries, sf service provider is asked to prove. 
 <br/><br/>  
 
 ### You mentionned freedom space, what are you refering to ?
@@ -53,11 +57,12 @@ Let's try to imagine a system in which the sf service provider can guarantee exe
 ## The place to be
 
 What is the best place to control what's going on in a software factory ?
-- the code -> No
-- the CI controller -> No
+- the code -> NO
+- the CI controller -> NO
 - the CI build agent -> YES YES YES
 <br/>
 
-GitHub Actions is a great CI system that provides a large autonomy to developer. The purpose of this specification is to tell how we can conciliate this great tool with sf service provider concern. Now let's move to the [spec](SPEC.md). 
+GitHub Actions is a great CI system that provides a large autonomy to developer. 
+The purpose of this specification is to tell how we can conciliate this great tool with sf service provider concerns. Now let's move to the [spec](SPEC.md). 
 <br/><br/>  
 
